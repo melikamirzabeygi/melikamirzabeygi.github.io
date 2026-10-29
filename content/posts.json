@@ -1,0 +1,28 @@
+[
+ {
+  "id": "p1",
+  "slug": "data-prep-checklist",
+  "published": true,
+  "date": {
+   "fa": "آبان ۱۴۰۵",
+   "en": "October 2026"
+  },
+  "cat": {
+   "fa": "تحلیل داده",
+   "en": "Data analysis"
+  },
+  "cover": "",
+  "title": {
+   "fa": "چک‌لیست آماده‌سازی داده پیش از تحلیل آماری",
+   "en": "A checklist for preparing data before statistical analysis"
+  },
+  "summary": {
+   "fa": "پیش از ارسال فایل داده برای تحلیل، این هشت مورد را بررسی کنید تا تحلیل سریع‌تر، دقیق‌تر و کم‌هزینه‌تر انجام شود.",
+   "en": "Before you send a data file for analysis, check these eight points so the analysis is faster, more accurate and cheaper."
+  },
+  "body": {
+   "fa": "بیشتر زمان یک تحلیل آماری صرف مرتب کردن داده می‌شود، نه خود تحلیل. اگر این موارد را پیش از ارسال فایل بررسی کنید، کار سریع‌تر و با خطای کمتر انجام می‌شود.\n\n## ۱. هر سطر یک نفر، هر ستون یک متغیر\nهر شرکت‌کننده فقط یک سطر داشته باشد و هر ستون فقط یک متغیر. اگر اندازه‌گیری تکراری دارید (مثلاً پیش‌آزمون و پس‌آزمون)، برای هر زمان یک ستون جدا بسازید.\n\n## ۲. سلول‌های ادغام‌شده و رنگ ممنوع\nنرم‌افزارهای آماری رنگ و سلول ادغام‌شده را نمی‌خوانند. اگر اطلاعاتی را با رنگ مشخص کرده‌اید، آن را به یک ستون جدید تبدیل کنید.\n\n## ۳. کد یکسان برای دادهٔ گمشده\nسلول خالی بگذارید یا یک کد ثابت (مثلاً 999) و همین را در همهٔ ستون‌ها رعایت کنید. صفر را برای «نامعلوم» استفاده نکنید.\n\n## ۴. کدگذاری یکنواخت\nبرای متغیرهای گروهی، مقدارها همه‌جا یکسان نوشته شوند؛ مثلاً همه‌جا «زن» و «مرد»، نه گاهی «خانم».\n\n## ۵. دفترچهٔ کد (Codebook)\nیک برگهٔ جدا بسازید که نام هر ستون، معنی آن، واحد اندازه‌گیری و معنی هر کد را توضیح دهد.\n\n## ۶. بررسی دامنهٔ مقادیر\nکمینه و بیشینهٔ هر ستون را نگاه کنید. سن ۲۵۰ یا نمرهٔ منفی معمولاً خطای ورود داده است.\n\n## ۷. تاریخ‌ها با یک قالب\nهمهٔ تاریخ‌ها را با یک قالب و یک تقویم (شمسی یا میلادی) وارد کنید.\n\n## ۸. یک نسخهٔ دست‌نخورده نگه دارید\nپیش از هر تغییر، یک کپی از دادهٔ خام ذخیره کنید تا همیشه بتوان به آن برگشت.\n\n---\n\nاگر دربارهٔ آماده‌سازی دادهٔ خودتان سؤال دارید، از بخش **رزرو مشاوره** وقت بگیرید.",
+   "en": "Most of the time in a statistical analysis goes into tidying data, not into the analysis itself. Checking these points before you send a file makes the work faster and less error-prone.\n\n## 1. One row per person, one column per variable\nEach participant should have exactly one row, and each column should hold one variable. For repeated measures (for example pre- and post-test), use a separate column for each time point.\n\n## 2. No merged cells or colour coding\nStatistical software cannot read colours or merged cells. If you marked something with a colour, turn it into a new column.\n\n## 3. One code for missing data\nLeave the cell empty or use one fixed code (for example 999), consistently in every column. Do not use zero for \"unknown\".\n\n## 4. Consistent category labels\nWrite categories the same way everywhere, e.g. always \"female\" and \"male\".\n\n## 5. A codebook\nKeep a separate sheet that explains each column's name, meaning, unit and the meaning of every code.\n\n## 6. Check value ranges\nLook at the minimum and maximum of each column. An age of 250 or a negative score is usually a data-entry error.\n\n## 7. One date format\nEnter all dates in a single format and a single calendar.\n\n## 8. Keep an untouched copy\nSave a copy of the raw data before any change so you can always go back.\n\n---\n\nIf you have questions about preparing your own data, use **Book a consultation**."
+  }
+ }
+]

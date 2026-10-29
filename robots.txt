@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://melikamirzabeygi.github.io/sitemap.xml

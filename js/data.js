@@ -1,0 +1,259 @@
+/* All site content lives here. Edit this file to update the portal; no other file needs to change.
+   Each text field has a Persian (fa) and English (en) version. Images live in assets/img/. */
+window.SITE = {
+  email: "melikamirzabeygi@gmail.com",
+  photo: "assets/img/photo.jpg",
+  logo: "assets/img/logo.png",
+
+  ui: {
+    fa: { dir: "rtl", name: "ملیکا میرزابیکی", role: "پژوهشگر سلامت روان و تحلیلگر داده",
+      nav: { overview: "نمای کلی", dashboard: "داشبورد", work: "نمونه‌کارها", research: "پژوهش", experience: "سوابق", services: "خدمات", contact: "ارتباط" },
+      lang: "English", theme: "تغییر پوسته", copy: "کپی ایمیل", copied: "ایمیل کپی شد", copyFail: "ایمیل را انتخاب و کپی کنید",
+      all: "همه", close: "بستن", view: "مشاهدهٔ تصاویر", problem: "مسئله", did: "کاری که کردم", result: "نتیجه",
+      kTitle: "در یک نگاه", dTitle: "داشبورد عملکرد", wTitle: "نمونه‌کارها", rTitle: "برون‌داد پژوهشی", eTitle: "سوابق کاری", sTitle: "خدماتی که ارائه می‌دهم", cTitle: "همکاری با من",
+      th: ["عنوان", "روش", "وضعیت"], filterAll: "همهٔ وضعیت‌ها", search: "جست‌وجو در عنوان‌ها",
+      chart1: "خروجی‌ها به تفکیک نوع", chart2: "وضعیت دست‌نوشته‌ها", chart3: "حوزه‌های ۲۵ پروژهٔ تحویل‌شده", projects: "پروژه", chart4: "ارتقای رتبهٔ کشوری مرکز تحقیقات", chart5: "مهارت‌ها",
+      rankNote: "رتبه (عدد کمتر بهتر است)", props: "پروپوزال‌ها و گزارش‌ها", train: "دوره‌ها", ws: "کارگاه‌هایی که برگزار کردم", edu: "تحصیلات", rec: "تقدیر و مسئولیت‌ها",
+      footer: "آخرین به‌روزرسانی: آبان ۱۴۰۵", start: "شروع همکاری", avail: "آمادهٔ همکاری", city: "تهران", menu: "منو", selected: "نمونه‌کارهای منتخب", viewCase: "مشاهدهٔ پرونده", emailMe: "ارسال ایمیل", top: "بازگشت به بالا", about: "درباره من", impact: "عملکرد در عدد", tools: "ابزارها", rights: "تمامی حقوق محفوظ است.", dLead: "خروجی‌ها، وضعیت دست‌نوشته‌ها و مهارت‌ها در یک برگه.", wLead: "هفت پرونده از کارهای واقعی؛ روی تصویر هر پرونده بزنید تا همهٔ تصاویرش را ببینید.", rLead: "دست‌نوشته‌ها با وضعیت فعلی هر کدام.", badgeLine: "تهران، دانشگاه علوم توانبخشی و سلامت اجتماعی", files: "تصویر", open: "باز کردن پرونده", contactText: "پروژه‌تان را بفرستید تا بررسی کنم و بگویم چه کمکی از من برمی‌آید. تحویل دقیق و به‌موقع، به فارسی و انگلیسی." },
+    en: { dir: "ltr", name: "Melika Mirzabeygi", role: "Mental Health Researcher & Data Analyst",
+      nav: { overview: "Overview", dashboard: "Dashboard", work: "Work samples", research: "Research", experience: "Experience", services: "Services", contact: "Contact" },
+      lang: "فارسی", theme: "Toggle theme", copy: "Copy email", copied: "Email copied", copyFail: "Select the address to copy it",
+      all: "All", close: "Close", view: "View images", problem: "Problem", did: "What I did", result: "Result",
+      kTitle: "At a glance", dTitle: "Performance dashboard", wTitle: "Work samples", rTitle: "Research output", eTitle: "Experience", sTitle: "Services", cTitle: "Work with me",
+      th: ["Title", "Methods", "Status"], filterAll: "All statuses", search: "Search titles",
+      chart1: "Outputs by type", chart2: "Manuscript status", chart3: "Focus of 25 delivered projects", projects: "projects", chart4: "Research centre national rank", chart5: "Skills",
+      rankNote: "Rank (lower is better)", props: "Proposals & reports", train: "Training", ws: "Workshops I organised", edu: "Education", rec: "Recognition",
+      footer: "Last updated: October 2026", start: "Start a project", avail: "Available for work", city: "Tehran", menu: "Menu", selected: "Selected work", viewCase: "View case", emailMe: "Email me", top: "Back to top", about: "About", impact: "Impact in numbers", tools: "Tools", rights: "All rights reserved.", dLead: "Outputs, manuscript status and skills on one sheet.", wLead: "Seven files from real work. Tap an image to see every picture in the file.", rLead: "Manuscripts and where each one stands.", badgeLine: "Tehran — University of Social Welfare and Rehabilitation Sciences", files: "images", open: "Open file", contactText: "Send me your project and I will tell you how I can help. Accurate, on-time delivery in English or Persian." }
+  },
+
+  hero: {
+    fa: { kicker: "پژوهش · داده · مدیریت سلامت", title: "داده و ایدهٔ شما را به مقالهٔ آمادهٔ ارسال، پروپوزال قابل تصویب و داشبورد تصمیم‌ساز تبدیل می‌کنم.",
+      text: "پژوهشگر و تحلیلگر داده با بیش از ۱۱ سال سابقه در دانشگاه علوم توانبخشی و سلامت اجتماعی؛ چهار سال هماهنگ‌کنندهٔ امور پژوهشی مرکز تحقیقات سایکوز و اکنون کارشناس مسئول حوزهٔ مدیریت مرکز آموزشی درمانی روانپزشکی رازی." },
+    en: { kicker: "Research · Data · Healthcare management", title: "I turn your data and ideas into submission-ready papers, fundable proposals and decision-ready dashboards.",
+      text: "Researcher and data analyst with 11+ years at the University of Social Welfare and Rehabilitation Sciences: four years coordinating research at the Psychosis Research Center, now Senior Management Officer at Razi Psychiatric Teaching Hospital." }
+  },
+
+  kpis: [
+    { v: { fa: "۹", en: "9" }, l: { fa: "دست‌نوشتهٔ علمی", en: "scientific manuscripts" } },
+    { v: { fa: "۶", en: "6" }, l: { fa: "پروپوزال پژوهشی", en: "research proposals" } },
+    { v: { fa: "۴۸ ← ۱۶", en: "48 → 16" }, l: { fa: "ارتقای رتبهٔ کشوری مرکز", en: "centre national rank" } },
+    { v: { fa: "۲۵", en: "25" }, l: { fa: "پروژهٔ تحویل‌شده", en: "projects delivered" } },
+    { v: { fa: "۳۹۵", en: "395" }, l: { fa: "سنجهٔ اعتباربخشی در چک‌لیست", en: "accreditation measures built" } },
+    { v: { fa: "۵۰ / ۳۷", en: "50 / 37" }, l: { fa: "راهکار / شاخص در داشبورد", en: "strategies / KPIs tracked" } }
+  ],
+
+  /* dashboard data (numbers only) */
+  dash: {
+    outputs: [ { k: { fa: "مقاله", en: "Manuscripts" }, n: 9 }, { k: { fa: "پروپوزال", en: "Proposals" }, n: 6 }, { k: { fa: "گزارش نهایی طرح", en: "Final reports" }, n: 1 }, { k: { fa: "پروژهٔ مدیریتی", en: "Management projects" }, n: 9 } ],
+    status: [ { k: { fa: "ارسال‌شده", en: "Submitted" }, n: 1, c: "info" }, { k: { fa: "در حال بازنگری", en: "Under revision" }, n: 2, c: "warn" }, { k: { fa: "تکمیل / آمادهٔ ارسال", en: "Completed / ready" }, n: 2, c: "good" }, { k: { fa: "پیش‌نویس", en: "Draft" }, n: 4, c: "mute" } ],
+    areas: [ { k: { fa: "پژوهش و نگارش علمی", en: "Research & scientific writing" }, n: 16, c: "brand" }, { k: { fa: "مدیریت، داشبورد و پورتال", en: "Management, dashboards & portals" }, n: 9, c: "accent" } ],
+    rank: [ { y: { fa: "پیش از ۱۴۰۳", en: "Before 1403" }, n: 48 }, { y: { fa: "ارزشیابی ۱۴۰۳", en: "1403 evaluation" }, n: 16 } ],
+    skills: [
+      { k: { fa: "روش‌شناسی و طراحی مطالعه", en: "Research methodology" }, n: 95 },
+      { k: { fa: "نگارش مقاله و پروپوزال", en: "Manuscript & proposal writing" }, n: 95 },
+      { k: { fa: "تحلیل آماری SPSS", en: "Statistical analysis (SPSS)" }, n: 90 },
+      { k: { fa: "داشبورد و پورتال مدیریتی", en: "Dashboards & portals" }, n: 90 },
+      { k: { fa: "علم‌سنجی و ارزشیابی", en: "Scientometrics & evaluation" }, n: 85 },
+      { k: { fa: "میانجی‌گری و یادگیری ماشین", en: "Mediation & machine learning" }, n: 80 },
+      { k: { fa: "بودجه و اعتباربخشی", en: "Budgeting & accreditation" }, n: 80 }
+    ]
+  },
+
+  categories: [
+    { id: "mgmt", fa: "مدیریت و داشبورد", en: "Management & dashboards" },
+    { id: "data", fa: "تحلیل داده", en: "Data analysis" },
+    { id: "method", fa: "روش‌شناسی", en: "Methodology" }
+  ],
+
+  cases: [
+    { cat: "mgmt", img: { fa: "fa_home.jpg", en: "en_home.jpg" },
+      title: { fa: "پورتال مدیریتی و نیازسنجی بودجهٔ ۱۴۰۶", en: "Management portal & FY1406 budget needs assessment" },
+      pso: { fa: ["درخواست‌های بودجه، قراردادها و دادهٔ بهره‌وری در فایل‌های جدا بود و مدیریت نمای واحدی نداشت.", "طراحی معماری اطلاعات، ساخت پورتال و جمع‌آوری درخواست و وضعیت بودجهٔ همهٔ واحدها.", "درخواست ۱۴ واحد در یک نمودار همراه با وضعیت و اقدام بعدی؛ قابل ویرایش و اشتراکی در شبکهٔ بیمارستان."],
+             en: ["Budget requests, contracts and productivity data sat in separate files; leadership had no single view.", "Designed the information architecture, built the portal and collected every unit's budget request and status.", "14 units' requests in one chart with status and next step; editable and shared on the hospital network."] },
+      gallery: [ { fa: "fa_home.jpg", en: "en_home.jpg", c: { fa: "صفحهٔ اصلی پورتال", en: "Portal home" } }, { fa: "fa_budget.jpg", en: "en_budget.jpg", c: { fa: "نیازسنجی بودجه (مبالغ محو شده)", en: "Budget needs assessment (amounts blurred)" } } ],
+      tags: { fa: ["معماری اطلاعات", "بودجه", "پورتال"], en: ["Information architecture", "Budgeting", "Portal"] } },
+    { cat: "mgmt", img: { fa: "fa_dash.jpg", en: "en_dash.jpg" },
+      title: { fa: "داشبورد بهره‌وری و ابزار خودارزیابی اعتباربخشی", en: "Productivity dashboard & accreditation self-assessment" },
+      pso: { fa: ["۵۰ راهکار وزارت و ۳۹۵ سنجهٔ اعتباربخشی مسئول، وضعیت و نمای پیشرفت نداشتند.", "مدل‌سازی راهکار، فعالیت و شاخص؛ تبدیل استانداردها به چک‌لیست هر حوزه با امتیاز وزنی.", "نمای زندهٔ پیشرفت در ۷ محور؛ هر مسئول حوزه خودارزیابی می‌کند و سنجه‌های ایمنی بیمار را می‌بیند."],
+             en: ["50 ministry strategies and 395 accreditation measures had no owner, status or progress view.", "Modelled strategies, activities and KPIs; turned the standards into domain checklists with weighted scoring.", "Live progress across 7 axes; each domain owner self-assesses and sees patient-safety items needing action."] },
+      gallery: [ { fa: "fa_dash.jpg", en: "en_dash.jpg", c: { fa: "داشبورد بهره‌وری", en: "Productivity dashboard" } }, { fa: "fa_prod.jpg", en: "en_prod.jpg", c: { fa: "برنامهٔ بهره‌وری در پورتال", en: "Productivity programme page" } }, { fa: "fa_acc.jpg", en: "en_acc.jpg", c: { fa: "چک‌لیست اعتباربخشی", en: "Accreditation checklist" } } ],
+      tags: { fa: ["KPI", "داشبورد", "اعتباربخشی"], en: ["KPI design", "Dashboard", "Accreditation"] } },
+    { cat: "mgmt", img: { fa: "lic1.jpg", en: "lic1.jpg" },
+      title: { fa: "ارزشیابی، رتبه‌بندی و مجوز قطعی مرکز تحقیقات", en: "Research-centre evaluation, ranking & licensing" },
+      pso: { fa: ["مرکز از ۱۳۹۴ فقط موافقت اصولی داشت و رتبهٔ کشوری‌اش ۴۸ بود.", "جمع‌آوری مقالات و مستندات، تحلیل شاخص‌ها در مقایسه با مراکز هم‌گروه و نگارش پرونده و اسلایدهای مجوز.", "ارسال ارزشیابی ۱۴۰۳ با ۴۱ مقالهٔ نمایه‌شده؛ ارتقای رتبه از ۴۸ به ۱۶؛ تکمیل پروندهٔ مجوز قطعی."],
+             en: ["The centre had held only a preliminary licence since 1394 and ranked 48th nationally.", "Collected articles and evidence, benchmarked indicators against peer centres, wrote the licensing dossier and slides.", "1403 evaluation submitted with 41 indexed articles; rank rose from 48th to 16th; licensing dossier completed."] },
+      gallery: [ { fa: "lic1.jpg", en: "lic1.jpg", c: { fa: "ارائهٔ مجوز قطعی", en: "Licensing presentation (Persian)" } }, { fa: "lic4.jpg", en: "lic4.jpg", c: { fa: "برنامهٔ راهبردی و عملیاتی", en: "Strategic & operational plan" } }, { fa: "lic12.jpg", en: "lic12.jpg", c: { fa: "پایان‌نامه‌های مرکز", en: "Theses at the centre" } } ],
+      tags: { fa: ["علم‌سنجی", "ارزشیابی", "برنامهٔ راهبردی"], en: ["Scientometrics", "Evaluation", "Strategy"] } },
+    { cat: "data", img: { fa: "fa_aras.jpg", en: "en_aras.jpg" },
+      title: { fa: "رجیستری ARAS: وب‌سایت، یادگیری ماشین و میانجی‌گری", en: "ARAS registry: website, machine learning & mediation" },
+      pso: { fa: ["داده‌های رجیستری چندمرکزی سایکوز اپیزود اول (حدود ۷۰۰ بیمار، سه استان) باید به یافته‌های قابل انتشار تبدیل می‌شد.", "جنگل تصادفی و K-means برای پیامد عملکردی؛ میانجی‌گری بوت‌استرپ با جایگذاری چندگانه؛ بازطراحی وب‌سایت رجیستری.", "سه مقالهٔ انگلیسی، یک گزارش نهایی طرح به‌عنوان مجری و وب‌سایت رجیستری."],
+             en: ["A multicentre first-episode psychosis registry (~700 patients, three provinces) needed publishable findings.", "Random Forest and K-means for functional outcome; bootstrap mediation with multiple imputation; rebuilt the registry website.", "Three English manuscripts, one final project report as PI, and the registry website."] },
+      gallery: [ { fa: "fa_aras.jpg", en: "en_aras.jpg", c: { fa: "وب‌سایت رجیستری ARAS", en: "ARAS registry website" } }, { fa: "ml_importance.jpg", en: "ml_importance.jpg", c: { fa: "اهمیت متغیرها (جنگل تصادفی)", en: "Feature importance (Random Forest)" } }, { fa: "rel_mediation.jpg", en: "rel_mediation.jpg", c: { fa: "میانجی‌گری بوت‌استرپ", en: "Bootstrap mediation" } }, { fa: "tom_forest.jpg", en: "tom_forest.jpg", c: { fa: "تحلیل حساسیت", en: "Sensitivity analyses" } }, { fa: "lic9.jpg", en: "lic9.jpg", c: { fa: "اسلاید رجیستری", en: "Registry slide" } } ],
+      tags: { fa: ["یادگیری ماشین", "میانجی‌گری", "رجیستری"], en: ["Machine learning", "Mediation", "Registry"] } },
+    { cat: "data", img: { fa: "hrv_pheno.jpg", en: "hrv_pheno.jpg" },
+      title: { fa: "حسگر پوشیدنی به‌عنوان زیست‌نشانگر دیجیتال", en: "Wearable sensors as a digital biomarker" },
+      pso: { fa: ["آیا جفت‌شدگی تغییرپذیری ضربان قلب و حرکت، اطلاعاتی فراتر از HRV به‌تنهایی می‌دهد؟", "محاسبهٔ شاخص‌های جفت‌شدگی، همبستگی متقاطع تأخیری، رگرسیون لجستیک LOOCV و منحنی ROC روی دادهٔ باز HRV-ACC.", "فنوتیپ نقص ترکیبی در بیماران بسیار شایع‌تر بود (Fisher OR = 14.5، p = .006)."],
+             en: ["Does heart-rate-variability–movement coupling add information beyond HRV alone?", "Coupling metrics, lagged cross-correlation, LOOCV logistic regression and ROC curves on the open HRV-ACC dataset.", "A combined-deficit phenotype was far more common in patients (Fisher OR = 14.5, p = .006)."] },
+      gallery: [ { fa: "hrv_pheno.jpg", en: "hrv_pheno.jpg", c: { fa: "چهار فنوتیپ", en: "Four-phenotype taxonomy" } }, { fa: "hrv_roc.jpg", en: "hrv_roc.jpg", c: { fa: "منحنی ROC", en: "LOOCV ROC curves" } }, { fa: "hrv_coupling.jpg", en: "hrv_coupling.jpg", c: { fa: "جفت‌شدگی فردی", en: "Person-level coupling" } }, { fa: "hrv_lag.jpg", en: "hrv_lag.jpg", c: { fa: "همبستگی متقاطع تأخیری", en: "Lagged cross-correlation" } } ],
+      tags: { fa: ["تحلیل سیگنال", "سلامت دیجیتال", "طبقه‌بندی"], en: ["Signal analysis", "Digital health", "Classification"] } },
+    { cat: "method", img: { fa: "mcif_fa.jpg", en: "mcif_main.jpg" },
+      title: { fa: "چارچوب MCIF: تفسیر نتایج فراتر از مقدار p", en: "MCIF: reading trial results beyond p-values" },
+      pso: { fa: ["نتایج معنادار گاهی فایدهٔ ناچیز را پنهان می‌کنند و کارآزمایی‌های کم‌توان فایدهٔ واقعی را.", "مرور ۳٬۸۴۷ رکورد (۴۱ کارآزمایی) و ساخت چارچوب ترتیبی هفت‌حوزه‌ای.", "مقالهٔ مرور روش‌شناختی ارسال‌شده و پروپوزال اعتبارسنجی چارچوب."],
+             en: ["Significant results can hide trivial benefit; under-powered trials can hide real benefit.", "Reviewed 3,847 records (41 trials) and built a seven-domain sequential framework.", "Methodological review submitted, plus a validation proposal for the framework."] },
+      gallery: [ { fa: "mcif_fa.jpg", en: "mcif_main.jpg", c: { fa: "هفت لایهٔ MCIF", en: "The MCIF framework" } }, { fa: "mcif_zones.jpg", en: "mcif_zones.jpg", c: { fa: "نواحی ناهمخوانی", en: "Discordance zones" } }, { fa: "mcif_valid.jpg", en: "mcif_valid.jpg", c: { fa: "مسیر اعتبارسنجی", en: "Validation pathway" } }, { fa: "boot_hist.jpg", en: "boot_hist.jpg", c: { fa: "توزیع بوت‌استرپ", en: "Bootstrap distribution" } } ],
+      tags: { fa: ["روش‌شناسی", "اندازهٔ اثر", "مرور"], en: ["Methodology", "Effect size", "Review"] } },
+    { cat: "data", img: { fa: "mea_scatter.jpg", en: "mea_scatter.jpg" },
+      title: { fa: "شناخت اجتماعی و میانجی‌گری علّی", en: "Social cognition & causal mediation" },
+      pso: { fa: ["حرکت سر و تشخیص هیجان در ۱۴۶ نفر در طیف خطر روان‌پریشی؛ اثر پرتودرمانی بر شناخت در ۲۵۵ بازماندهٔ سرطان کودکی.", "همبستگی تفکیکی، ANOVA و کنترل FDR؛ میانجی‌گری counterfactual با ۵٬۰۰۰ نمونه‌گیری بوت‌استرپ.", "حدود ۵۶٪ اثر پرتودرمانی بر شناخت از مسیر سن مغزی؛ دو دست‌نوشتهٔ کامل."],
+             en: ["Head movement and emotion recognition in 146 people across the psychosis-risk spectrum; radiotherapy and cognition in 255 childhood-cancer survivors.", "Partial correlation, ANOVA and FDR control; counterfactual mediation with 5,000 bootstrap resamples.", "About 56% of the radiotherapy effect on cognition ran through brain age; two full manuscripts."] },
+      gallery: [ { fa: "mea_scatter.jpg", en: "mea_scatter.jpg", c: { fa: "حرکت سر و دقت ER-40", en: "Head movement vs. ER-40" } }, { fa: "mea_sips.jpg", en: "mea_sips.jpg", c: { fa: "تغییرپذیری حرکت و علائم", en: "Movement variability vs. symptoms" } }, { fa: "brain_med.jpg", en: "brain_med.jpg", c: { fa: "مدل میانجی‌گری", en: "Mediation model" } }, { fa: "brain_forest.jpg", en: "brain_forest.jpg", c: { fa: "اثرات غیرمستقیم", en: "Indirect effects by domain" } } ],
+      tags: { fa: ["SPSS", "استنباط علّی", "مصورسازی"], en: ["SPSS", "Causal inference", "Visualisation"] } }
+  ],
+
+  pubs: [
+    { s: "sub", t: { fa: "Beyond P Values: مرور روش‌شناختی ناهمخوانی معناداری آماری و بالینی در کارآزمایی‌های دیجیتال افسردگی نوجوانان", en: "Beyond P Values: A Narrative Methodological Review of Statistical and Clinical Discordance in Adolescent Digital Depression Intervention Research" }, m: { fa: "مرور + چارچوب MCIF", en: "Review + MCIF framework" } },
+    { s: "rev", t: { fa: "رمزگشایی حالات ذهنی، علائم افسردگی و کیفیت زندگی در سایکوز اپیزود اول (ARAS، تهران)", en: "Mental-State Decoding, Depressive Symptoms and Quality of Life in First-Episode Psychosis (ARAS, Tehran site)" }, m: { fa: "میانجی‌گری، بوت‌استرپ", en: "Mediation, bootstrap" } },
+    { s: "done", t: { fa: "دینداری، علائم افسردگی و کیفیت زندگی در رجیستری سایکوز اپیزود اول (ARAS، ۵۷۳ نفر)", en: "Religiosity, Depressive Symptoms and Quality of Life in a First-Episode Psychosis Registry (ARAS, n = 573)" }, m: { fa: "MICE، میانجی‌گری", en: "MICE, mediation" } },
+    { s: "rev", t: { fa: "پیش‌بینی مسیرهای بهبود عملکردی در اسکیزوفرنیا با یادگیری ماشین (۷۵۶ نفر)", en: "Predicting Functional Recovery Trajectories in Schizophrenia Using Machine Learning (n = 756)" }, m: { fa: "جنگل تصادفی، K-means", en: "Random Forest, K-means" } },
+    { s: "done", t: { fa: "فنوتیپ نقص ترکیبی HRV و جفت‌شدگی HRV-حرکت در اختلالات روان‌پریشانه", en: "A Combined-Deficit Phenotype in HRV and HRV–Mobility Coupling in Psychotic Disorders" }, m: { fa: "سیگنال پوشیدنی، ROC", en: "Wearable signals, ROC" } },
+    { s: "draft", t: { fa: "فعالیت روانی-حرکتی و تشخیص هیجان چهره در طیف خطر روان‌پریشی (۱۴۶ نفر)", en: "Psychomotor Activity and Facial Emotion Recognition Across the Psychosis-Risk Continuum (n = 146)" }, m: { fa: "تحلیل انرژی حرکت، FDR", en: "Motion Energy Analysis, FDR" } },
+    { s: "draft", t: { fa: "پیری تسریع‌شدهٔ مغز، میانجی اثر پرتودرمانی جمجمه بر شناخت (۲۵۵ نفر)", en: "Accelerated Brain Aging Mediates Cranial Radiotherapy Effects on Neurocognition (n = 255)" }, m: { fa: "میانجی‌گری علّی", en: "Causal mediation" } },
+    { s: "draft", t: { fa: "بازتحلیل اندازهٔ اثر یک کارآزمایی دیجیتال برای افسردگی نوجوانان (فارسی)", en: "Effect-size re-analysis of a digital intervention trial for adolescent depression (Persian)" }, m: { fa: "کوهن d، تحلیل حساسیت", en: "Cohen's d, sensitivity" } },
+    { s: "draft", t: { fa: "استفاده از اندازهٔ اثر برای ارزیابی مجدد اثر محرومیت از خواب بر عملکرد ورزشکاران (فارسی)", en: "Using effect sizes to re-assess sleep deprivation and athletic performance (Persian)" }, m: { fa: "کوهن dz", en: "Cohen's dz" } }
+  ],
+  statusLabels: {
+    sub: { fa: "ارسال‌شده", en: "Submitted", c: "info" }, rev: { fa: "در حال بازنگری", en: "Under revision", c: "warn" },
+    done: { fa: "تکمیل / آمادهٔ ارسال", en: "Completed / ready", c: "good" }, draft: { fa: "پیش‌نویس", en: "Draft", c: "mute" }
+  },
+  proposals: {
+    fa: ["اعتبارسنجی چارچوب MCIF (مطالعهٔ ترکیبی)", "جفت‌شدگی قلبی-حرکتی به‌عنوان زیست‌نشانگر دیجیتال", "پیش‌بینی رفتارهای پرخطر نوجوانان با یادگیری ماشین (Add Health)", "اثر ویتامین B-complex بر استرس شغلی پرستاران (کارآزمایی تصادفی)", "پیش‌پروپوزال نیماد: CBT گروهی برای دستیاران مادر و شاغل", "عوامل پیش‌بینی‌کنندهٔ بستری مجدد (طرح ۳۳۷۸)", "گزارش نهایی طرح ARAS به‌عنوان مجری"],
+    en: ["MCIF validation (mixed methods)", "Cardiac–motor coupling as a digital biomarker", "ML prediction of adolescent risk behaviours (Add Health)", "Vitamin B-complex for nurses' occupational stress (RCT)", "NIMAD pre-proposal: group CBT for working-mother residents", "Predictors of psychiatric readmission (proposal 3378)", "USWR final report of the ARAS study, as PI"]
+  },
+  workshops: [
+    { t: { fa: "کاربرد هوش مصنوعی در نگارش متون علمی", en: "AI in scientific writing" }, d: { fa: "دی ۱۴۰۳", en: "Jan 2025" } },
+    { t: { fa: "آزمون‌های روانشناختی", en: "Psychological testing" }, d: { fa: "بهمن ۱۴۰۳", en: "Jan 2025" } },
+    { t: { fa: "پروپوزال‌نویسی", en: "Proposal writing" }, d: { fa: "بهمن ۱۴۰۳", en: "Feb 2025" } },
+    { t: { fa: "طراحی کارآزمایی بالینی", en: "Clinical trial design" }, d: { fa: "بهمن ۱۴۰۳", en: "Feb 2025" } },
+    { t: { fa: "اخلاق در نشر", en: "Publication ethics" }, d: { fa: "اسفند ۱۴۰۳", en: "Feb 2025" } },
+    { t: { fa: "دورهٔ زبان تخصصی Let's Talk Psychiatry Club", en: "Let's Talk Psychiatry Club (specialist English)" }, d: { fa: "۱۴۰۳", en: "2024" } }
+  ],
+
+  experience: [
+    { d: { fa: "مهر ۱۴۰۵ – اکنون", en: "2026 – present" }, now: true,
+      t: { fa: "کارشناس مسئول حوزهٔ مدیریت", en: "Senior Management Officer" },
+      o: { fa: "مرکز آموزشی درمانی روانپزشکی رازی", en: "Razi Psychiatric Teaching Hospital" },
+      b: { fa: ["طراحی و ساخت پورتال معاونت توسعهٔ مدیریت و منابع با ۹ بخش", "داشبورد بهره‌وری: ۵۰ راهکار، ۷ محور، ۳۷ شاخص", "نیازسنجی بودجهٔ ۱۴۰۶ با تلفیق درخواست ۱۴ واحد", "چک‌لیست خودارزیابی اعتباربخشی: ۱۹ حوزه، ۳۹۵ سنجه", "عضو کمیتهٔ بهره‌وری؛ مکاتبات و ارائه‌های تصمیم‌ساز"],
+           en: ["Built the Deputy of Management Development & Resources portal (9 modules)", "Productivity dashboard: 50 strategies, 7 axes, 37 KPIs", "FY1406 budget needs assessment across 14 units", "Accreditation self-assessment checklist: 19 domains, 395 measures", "Productivity committee member; official letters and decision decks"] } },
+    { d: { fa: "آبان ۱۴۰۱ – مهر ۱۴۰۵", en: "2022 – 2026" },
+      t: { fa: "کارشناس تخصصی پژوهش", en: "Research Expert" },
+      o: { fa: "مرکز تحقیقات سایکوز، دانشگاه علوم توانبخشی و سلامت اجتماعی", en: "Psychosis Research Center, USWR" },
+      b: { fa: ["نمایندهٔ تام‌الاختیار مرکز برای اخذ مجوز قطعی از وزارت بهداشت", "هماهنگی ارزشیابی ۱۴۰۲ و ۱۴۰۳ (۴۱ مقالهٔ نمایه‌شده)؛ ارتقای رتبه از ۴۸ به ۱۶", "ثبت نخستین طرح اثرگذار ملی به نام مرکز", "دبیرخانهٔ شورای پژوهشی و پیگیری طرح‌ها در سامانهٔ پژوهان", "برگزاری کارگاه‌های پژوهشی و نخستین مدرسهٔ تابستانهٔ زبان تخصصی", "بازطراحی وب‌سایت رجیستری ARAS؛ جذب سرباز نخبهٔ پژوهشی"],
+           en: ["Authorised representative for the Ministry of Health definitive licence", "Coordinated the 1402 and 1403 evaluations (41 indexed articles); rank rose from 48th to 16th", "Registered the centre's first national impactful project", "Ran the research-council secretariat and Pajoohan follow-up", "Organised research workshops and the first specialist-English summer school", "Rebuilt the ARAS registry website; recruited an elite-conscript researcher"] } },
+    { d: { fa: "۱۴۰۱ – اکنون", en: "2022 – present" },
+      t: { fa: "پژوهشگر و تحلیلگر داده (پروژه‌ای)", en: "Researcher & data analyst (project-based)" },
+      o: { fa: "همکاری مستقل", en: "Independent" },
+      b: { fa: ["۹ دست‌نوشتهٔ علمی و ۶ پروپوزال", "تحلیل آماری پیشرفته: رگرسیون، میانجی‌گری، جایگذاری چندگانه، یادگیری ماشین", "طراحی چارچوب MCIF و تحلیل داده‌های حسگر پوشیدنی", "پاسخ به داوران، انتخاب مجله و کاور لتر"],
+           en: ["9 manuscripts and 6 proposals", "Advanced statistics: regression, mediation, multiple imputation, machine learning", "Designed the MCIF framework; analysed wearable-sensor data", "Reviewer responses, journal selection and cover letters"] } }
+  ],
+  education: [
+    { t: { fa: "کارشناسی ارشد علوم شناختی (در حال تحصیل)", en: "M.Sc. Cognitive Science (in progress)" }, o: { fa: "دانشگاه پیام نور، واحد تهران جنوب · ۱۴۰۵", en: "Payame Noor University, Tehran South · 2026" } },
+    { t: { fa: "کارشناسی کاردرمانی", en: "B.Sc. Occupational Therapy" }, o: { fa: "دانشگاه علوم توانبخشی و سلامت اجتماعی · ۱۳۹۰–۱۳۹۴", en: "University of Social Welfare and Rehabilitation Sciences · 2011–2015" } }
+  ],
+  recognition: {
+    fa: ["تقدیر رسمی از سوی معاون مرکز تحقیقات سایکوز (۱۴۰۳)", "نمایندهٔ تام‌الاختیار مرکز نزد وزارت بهداشت", "مجری گزارش نهایی طرح تحقیقاتی ARAS"],
+    en: ["Formal commendation from the Psychosis Research Center (2024)", "Authorised representative of the centre to the Ministry of Health", "Project lead (PI) of the ARAS final research report"]
+  },
+
+  services: [
+    { i: "stats", t: { fa: "تحلیل آماری", en: "Statistical analysis" }, d: { fa: "رگرسیون، ANCOVA، میانجی‌گری با بوت‌استرپ، جایگذاری چندگانه، جنگل تصادفی و K-means، همراه جدول و نمودار آمادهٔ انتشار.", en: "Regression, ANCOVA, bootstrap mediation, multiple imputation, Random Forest and K-means, with publication-ready tables and figures." } },
+    { i: "paper", t: { fa: "نگارش و بازنگری مقاله", en: "Manuscript writing & revision" }, d: { fa: "نگارش IMRaD، پاسخ به داوران، انتخاب مجله و کاور لتر.", en: "IMRaD drafting, reviewer responses, journal selection and cover letters." } },
+    { i: "prop", t: { fa: "نگارش پروپوزال", en: "Research proposals" }, d: { fa: "از بیان مسئله تا طرح تحلیل و گانت؛ قالب دانشگاه‌ها، پژوهان و نیماد.", en: "From problem statement to analysis plan and Gantt chart; university and NIMAD formats." } },
+    { i: "review", t: { fa: "مرور منابع و جست‌وجو", en: "Reviews & search strategies" }, d: { fa: "پروتکل مرور روایتی و نظام‌مند، رشتهٔ جست‌وجو و کتابخانهٔ EndNote.", en: "Narrative and systematic-review protocols, search strings and EndNote libraries." } },
+    { i: "dash", t: { fa: "داشبورد و پورتال", en: "Dashboards & portals" }, d: { fa: "طراحی شاخص، پورتال مدیریتی و پایش بودجه و بهره‌وری.", en: "KPI design, management portals, budget and productivity tracking." } },
+    { i: "eval", t: { fa: "اعتباربخشی و ارزشیابی", en: "Accreditation & evaluation" }, d: { fa: "چک‌لیست اعتباربخشی، ارزشیابی مراکز تحقیقاتی و علم‌سنجی.", en: "Accreditation checklists, research-centre evaluation and scientometrics." } },
+    { i: "trans", t: { fa: "ترجمه و ارائهٔ علمی", en: "Translation & presentations" }, d: { fa: "ترجمهٔ تخصصی فارسی و انگلیسی و طراحی ارائه.", en: "English–Persian scientific translation and slide design." } }
+  ],
+  /* ===== Added for the AXON-style site: labels, how-we-work, ordering, consultation, FAQ =====
+     Everything below is editable. Check the FAQ and process wording: they describe how you work with clients. */
+  x: {
+    fa: {
+      nav: { services: "خدمات", work: "نمونه‌کارها", learn: "آموزش", impact: "عملکرد", research: "پژوهش", about: "سوابق", process: "روند همکاری", order: "سفارش و مشاوره", faq: "پرسش‌ها" },
+      all: "همه", scroll: "اسکرول", counter: "تعداد نمونه‌کار", orderCta: "سفارش پروژه", consultCta: "رزرو مشاوره", mailLabel: "ایمیل",
+      h: { info: "[معرفی]", aims: "[هدف]", exploring: "[خدمات اصلی]", connect: "[ارتباط]",
+           services: "[خدمات]", work: "[نمونه‌کارها]", learn: "[آموزش]", impact: "[عملکرد]", research: "[پژوهش]", about: "[سوابق]", process: "[روند همکاری]", order: "[سفارش و مشاوره]", faq: "[پرسش‌های رایج]" },
+      t: { services: "خدماتی که ارائه می‌دهم", work: "پرونده‌های واقعی، از مسئله تا نتیجه", learn: "یادداشت‌ها و آموزش‌های کاربردی", impact: "کارنامه در عدد", research: "دست‌نوشته‌ها، پروپوزال‌ها و کارگاه‌ها", about: "سوابق کاری و تحصیلی", process: "از اولین پیام تا تحویل", order: "پروژه‌تان را شروع کنیم", faq: "پیش از سفارش" },
+      orderThis: "سفارش این خدمت", readMore: "خواندن مطلب", back: "بازگشت", noPosts: "هنوز مطلبی منتشر نشده است.", minRead: "دقیقه مطالعه", share: "کپی لینک مطلب", linkCopied: "لینک کپی شد", viewCase: "مشاهدهٔ پرونده", images: "تصویر",
+      outputs: "خروجی‌ها به تفکیک نوع", status: "وضعیت دست‌نوشته‌ها", skills: "مهارت‌ها", tools: "ابزارها", edu: "تحصیلات", rec: "تقدیر و مسئولیت‌ها", exp: "سوابق کاری",
+      props: "پروپوزال‌ها و گزارش‌ها", ws: "کارگاه‌هایی که برگزار کردم", search: "جست‌وجو در عنوان‌ها", allStatus: "همهٔ وضعیت‌ها", th: ["#", "عنوان", "روش", "وضعیت"],
+      problem: "مسئله", did: "کاری که کردم", result: "نتیجه", close: "بستن", top: "بازگشت به بالا",
+      tabs: { order: "سفارش پروژه", consult: "رزرو مشاوره" },
+      f: { name: "نام و نام خانوادگی", contact: "ایمیل یا شمارهٔ تماس", service: "نوع خدمت", other: "سایر", title: "عنوان یا موضوع پروژه",
+           desc: "شرح نیاز", descHint: "چه چیزی دارید (داده، پیش‌نویس، فایل) و چه خروجی‌ای می‌خواهید؟", deadline: "مهلت تحویل", lang: "زبان خروجی", link: "لینک فایل‌ها (اختیاری)", linkHint: "مثلاً لینک گوگل‌درایو",
+           topic: "موضوع مشاوره", mode: "نوع جلسه", duration: "مدت جلسه", when: "روزها و ساعت‌های مناسب", whenHint: "مثلاً شنبه تا چهارشنبه، بعد از ساعت ۱۷", question: "سؤال یا موضوع اصلی",
+           send: "ارسال درخواست", sending: "در حال ارسال…", required: "این بخش لازم است", privacy: "اطلاعات شما فقط برای پاسخ به همین درخواست استفاده می‌شود." },
+      deadlines: ["کمتر از یک هفته", "یک تا دو هفته", "دو تا چهار هفته", "بیش از یک ماه", "انعطاف‌پذیر"],
+      langs: ["فارسی", "انگلیسی", "هر دو"],
+      modes: ["آنلاین (تماس تصویری)", "تلفنی"],
+      durations: ["۳۰ دقیقه", "۶۰ دقیقه"],
+      ok: "درخواست شما ثبت شد. کد پیگیری:", okNext: "به‌زودی از طریق راه تماسی که نوشتید پاسخ می‌دهم.",
+      mailFallback: "ارسال مستقیم ممکن نشد؛ برنامهٔ ایمیل شما با متن آماده باز شد. اگر باز نشد، متن زیر را کپی کنید و به این آدرس بفرستید:",
+      copyText: "کپی متن", copied: "کپی شد"
+    },
+    en: {
+      nav: { services: "Services", work: "Work", learn: "Learn", impact: "Impact", research: "Research", about: "Experience", process: "Process", order: "Order & consult", faq: "FAQ" },
+      all: "All", scroll: "Scroll", counter: "Case studies", orderCta: "Order a project", consultCta: "Book a consultation", mailLabel: "Mail",
+      h: { info: "[info]", aims: "[aims]", exploring: "[core services]", connect: "[connect]",
+           services: "[services]", work: "[work]", learn: "[learn]", impact: "[impact]", research: "[research]", about: "[experience]", process: "[process]", order: "[order & consult]", faq: "[faq]" },
+      t: { services: "What I can do for you", work: "Real cases, from problem to result", learn: "Practical notes and tutorials", impact: "Track record in numbers", research: "Manuscripts, proposals and workshops", about: "Experience and education", process: "From first message to delivery", order: "Let's start your project", faq: "Before you order" },
+      orderThis: "Order this service", readMore: "Read", back: "Back", noPosts: "No articles yet.", minRead: "min read", share: "Copy link", linkCopied: "Link copied", viewCase: "View case", images: "images",
+      outputs: "Outputs by type", status: "Manuscript status", skills: "Skills", tools: "Tools", edu: "Education", rec: "Recognition", exp: "Experience",
+      props: "Proposals & reports", ws: "Workshops I organised", search: "Search titles", allStatus: "All statuses", th: ["#", "Title", "Methods", "Status"],
+      problem: "Problem", did: "What I did", result: "Result", close: "Close", top: "Back to top",
+      tabs: { order: "Order a project", consult: "Book a consultation" },
+      f: { name: "Full name", contact: "Email or phone", service: "Service", other: "Other", title: "Project title or topic",
+           desc: "What you need", descHint: "What do you have (data, draft, files) and what output do you need?", deadline: "Deadline", lang: "Output language", link: "Link to files (optional)", linkHint: "e.g. a Google Drive link",
+           topic: "Consultation topic", mode: "Session type", duration: "Length", when: "Suitable days and times", whenHint: "e.g. weekdays after 5 pm Tehran time", question: "Your main question",
+           send: "Send request", sending: "Sending…", required: "Required", privacy: "Your details are used only to reply to this request." },
+      deadlines: ["Under a week", "1–2 weeks", "2–4 weeks", "Over a month", "Flexible"],
+      langs: ["Persian", "English", "Both"],
+      modes: ["Online (video call)", "Phone"],
+      durations: ["30 minutes", "60 minutes"],
+      ok: "Your request has been received. Reference:", okNext: "I will reply through the contact details you gave.",
+      mailFallback: "The request could not be sent directly, so your email app was opened with the text ready. If it did not open, copy the text below and send it to:",
+      copyText: "Copy text", copied: "Copied"
+    }
+  },
+
+  /* How a project runs, in four steps */
+  process: [
+    { t: { fa: "ارسال نیاز", en: "Send your brief" }, d: { fa: "فرم سفارش را پر کنید یا ایمیل بزنید: موضوع، داده یا فایل‌های موجود، مهلت و قالب خروجی.", en: "Fill in the order form or email me: topic, the data or files you have, deadline and output format." } },
+    { t: { fa: "بررسی و پیشنهاد", en: "Review & proposal" }, d: { fa: "نیاز را بررسی می‌کنم و دامنهٔ کار، زمان‌بندی و هزینه را به‌صورت مکتوب پیشنهاد می‌دهم. پیش از تأیید شما کاری شروع نمی‌شود.", en: "I review the request and send a written scope, timeline and fee. Nothing starts before you approve it." } },
+    { t: { fa: "انجام و گزارش پیشرفت", en: "Work & updates" }, d: { fa: "کار در مراحل مشخص انجام می‌شود و پیش‌نویس‌ها را برای بازخورد شما می‌فرستم.", en: "The work runs in clear stages, and I share drafts for your feedback along the way." } },
+    { t: { fa: "تحویل و بازبینی", en: "Delivery & revisions" }, d: { fa: "خروجی نهایی همراه فایل‌های قابل‌ویرایش تحویل می‌شود و اصلاحات مربوط به همان دامنهٔ توافق‌شده انجام می‌شود.", en: "You receive the final output with editable files, and revisions within the agreed scope are included." } }
+  ],
+
+  /* Consultation topics (used in the booking form and the order section) */
+  consult: [
+    { fa: "روش‌شناسی و طراحی مطالعه", en: "Methodology & study design" },
+    { fa: "مشاورهٔ آماری: انتخاب آزمون و تفسیر خروجی", en: "Statistics: choosing tests and reading output" },
+    { fa: "پاسخ به داوران و انتخاب مجله", en: "Reviewer responses & journal choice" },
+    { fa: "طراحی شاخص و داشبورد مدیریتی", en: "KPI and management dashboard design" },
+    { fa: "پروپوزال‌نویسی", en: "Proposal writing" }
+  ],
+
+  faq: [
+    { q: { fa: "داده و فایل‌های من محرمانه می‌ماند؟", en: "Will my data and files stay confidential?" },
+      a: { fa: "بله. فایل‌ها فقط برای همان پروژه استفاده می‌شوند و با کسی به اشتراک گذاشته نمی‌شوند. اگر بخواهید، توافق‌نامهٔ محرمانگی هم امضا می‌شود.", en: "Yes. Files are used only for your project and are not shared. If you wish, we can also sign a confidentiality agreement." } },
+    { q: { fa: "هزینه چطور تعیین می‌شود؟", en: "How is the fee set?" },
+      a: { fa: "بعد از بررسی نیاز، بر اساس حجم کار و مهلت، پیشنهاد مکتوب می‌گیرید. هزینه پیش از شروع کار توافق می‌شود.", en: "After reviewing your request you get a written quote based on scope and deadline. The fee is agreed before any work starts." } },
+    { q: { fa: "انجام کار چقدر طول می‌کشد؟", en: "How long does it take?" },
+      a: { fa: "بسته به نوع و حجم کار متفاوت است؛ زمان دقیق در همان پیشنهاد اولیه مشخص می‌شود.", en: "It depends on the type and size of the work; the exact timeline is part of the first proposal." } },
+    { q: { fa: "خروجی را به چه زبانی تحویل می‌گیرم؟", en: "Which language will the output be in?" },
+      a: { fa: "فارسی یا انگلیسی، هر کدام که لازم دارید.", en: "Persian or English, whichever you need." } },
+    { q: { fa: "تحلیل‌ها با چه نرم‌افزاری انجام می‌شود؟", en: "Which software do you use for analysis?" },
+      a: { fa: "تحلیل‌ها عمدتاً با SPSS و Excel انجام می‌شود و خروجی همراه جدول‌ها و نمودارهای آمادهٔ گزارش یا مقاله تحویل داده می‌شود.", en: "Mainly SPSS and Excel; you receive the output with tables and figures ready for a report or paper." } },
+    { q: { fa: "مشاوره چطور برگزار می‌شود؟", en: "How do consultations work?" },
+      a: { fa: "به‌صورت آنلاین یا تلفنی، در زمانی که با هم هماهنگ می‌کنیم. فرم «رزرو مشاوره» را پر کنید تا برای تعیین وقت با شما تماس بگیرم.", en: "Online or by phone, at a time we agree. Fill in the booking form and I will contact you to set the time." } }
+  ],
+  tools: ["SPSS", "EndNote", "Excel", "PowerPoint", "Word", "HTML", "PubMed", "Scopus", "Web of Science", "PsycINFO"]
+};
